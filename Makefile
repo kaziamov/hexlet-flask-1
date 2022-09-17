@@ -1,6 +1,10 @@
 start-flask:
+	set-flask-path run-flask 
+set-flask-path:
 	export FLASK_APP=hello
+run-flask:
 	flask run
+
 start-server:
-	poetry run server
+	python -m server
 	
